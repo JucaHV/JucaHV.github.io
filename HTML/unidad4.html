@@ -1,0 +1,98 @@
+<!-- Esta es la página dedicada a la unidad 4, en la cual
+	 se encontrará toda la información con respecto a esta
+	 unidad.
+	 Autor: Juan Carlos Hurtado Vargas -->
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Unidad 4</title>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" type="text/css" href="../CSS/style.css" media="screen"/>
+			<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+		</head>
+		<body class="fondoU4">
+			<h1 class="tituloU4">Unidad 4</h1>
+			<h2 class="subtituloU4">Procesamiento Paralelo</h2>
+			<p class="textoU4">
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;4.1 ASPECTOS BÁSICOS DE LA COMPUTACIÓN PARALELA</b><br><br>
+				<b>¿Qué es?</b><br>
+				La computación paralela es una técnica de procesamiento de información que se basa en la utilización de múltiples procesadores para llevar a cabo una tarea en paralelo, en lugar de utilizar un solo procesador. Esta técnica permite mejorar significativamente la velocidad y eficiencia de los cálculos y análisis de datos en la computadora.<br>
+				<b>Sistemas de procesamiento paralelo</b><br>
+				Los sistemas de procesamiento paralelo se pueden clasificar en dos categorías: simétricos y asíncronos. Uno donde todos los procesadores comparten la misma memoria, y otro donde cada procesador tiene su propia memoria.<br>
+				<b>Herramientas de computacón en paralelo</b><br>
+				Las herramientas de computación en paralelo son programas y bibliotecas que se utilizan para programar y ejecutar aplicaciones en sistemas paralelos, de forma que podamos sacarle el máximo provecho a estos.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;4.2 TIPOS DE COMPUTACIÓN PARALELA</b><br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.1 CLASIFICACIÓN</b><br><br>
+				<b>Computación multinúcleo: </b>Un procesador multinúcleo es un procesador que incluye múltiples unidades de ejecución (núcleos) en el mismo chip.<br>
+				<b>Multiprocesamiento simétrico: </b>Un multiprocesador simétrico (SMP) es un sistema computacional con múltiples procesadores idénticos que comparten memoria y se conectan a través de un bus.<br>
+				<b>Computación en clúster: </b>Un clúster es un grupo de ordenadores débilmente acoplados que trabajan en estrecha colaboración, de modo que en algunos aspectos pueden considerarse como un solo equipo.<br>
+				<b>Procesamiento paralelo masivo: </b>Tienden a ser más grandes que los clústeres, con «mucho más» de 100 procesadores.<br>
+				<b>Computación distribuida: </b>La computación distribuida es la forma más distribuida de la computación paralela. Se hace uso de ordenadores que se comunican a través de la Internet para trabajar en un problema dado.<br>
+				<b>Circuitos integrados de aplicación específica: </b>Debido a que un ASIC (por definición) es específico para una aplicación dada, puede ser completamente optimizado para esa aplicación.<br>
+				<b>Procesadores vectoriales: </b>Pueden ejecutar la misma instrucción en grandes conjuntos de datos.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2 ARQUITECTURA DE COMPUTADORES SECUENCIALES</b><br><br>
+				Las computadoras secuenciales se basan en el modelo introducido por John Von Neumann, la cual consiste en:
+			</p>
+			<ul class="listaDes4">
+				<li>Una Unidad Central de Procesamiento(CPU)</li>
+				<li>Memoria Principal para almacenar información</li>
+				<li>Bus donde fluyan los datos</li>
+				<li>Mecanismo de sincronización</li>
+			</ul>
+			<p class="textoU4">
+				<b>Segmentación de instrucciones pipeline</b><br>
+				Por las limitaciones que este tiene se han desarrollado algunas estrategias para aumentar el rendimiento. La más conocida es la segmentación de instrucciones Pipeline que consiste en llevar a la cola de instrucciones la siguiente instrucción que se ejecutará. En estos sistemas, los valores de las salidas, en un momento dado, no dependen exclusivamente de los valores de las entradas en dicho momento, sino también de los valores anteriores. El sistema más simple que existe se denomina: Biestable.<br>
+				<b>Biestable</b><br>
+				Es un multivibrador capaz de permanecer en uno de dos estados posibles durante un tiempo indefinido en ausencia de perturbaciones. Esta característica es ampliamente utilizada en electrónica digital para memorizar información. El paso de un estado a otro se realiza variando sus entradas.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.2.1 TAXONOMÍA DE FLYNN</b><br><br>
+				Esta taxonomía de las arquitecturas está basada en la clasificación atendiendo al flujo de datos e instrucciones en un sistema. Un flujo de instrucciones es el conjunto de instrucciones secuenciales que son ejecutadas por un único procesador, y un flujo de datos es el flujo secuencial de datos requeridos por el flujo de instrucciones. Se basa en el número de instrucciones y de la secuencia de datos que la computadora utiliza para procesar información, Puede haber secuencias de instrucciones sencillas o múltiples y secuencias de datos sencillas o múltiples.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2.3 ORGANIZACIÓN DE DIRECCIONES DE MEMORIA</b><br><br>
+				<b>Organización lógica: </b>Los programas a menudo están organizados en módulos, algunos de los cuales pueden ser compartidos por diferentes programas. La gestión de memoria es responsable de manejar esta organización lógica, que se contrapone al espacio de direcciones físicas lineales. Una forma de lograrlo es mediante la segmentación de memoria.<br>
+				<b>Organización física: </b>La memoria suele dividirse en un almacenamiento primario de alta velocidad y uno secundario de menor velocidad. La gestión de memoria del sistema operativo se ocupa de trasladar la información entre estos dos niveles de memoria.<br><br>
+				Las direcciones de memoria se organizan en bloques o segmentos de memoria, cada uno con una dirección base y un tamaño determinado. Las direcciones de memoria se representan como números enteros que indican la posición en la memoria donde se encuentra un dato o una instrucción.<br><br>
+				Hay dos tipos de organización de direcciones de memoria: la organización de direcciones de memoria contiguas y la organización de direcciones de memoria no contiguas:<br>
+				La organización de direcciones de memoria <b>contiguas</b> es aquella en la que las celdas de memoria se organizan de forma consecutiva en la memoria. En este tipo de organización, la dirección de memoria de una celda se puede calcular sumando la dirección de la celda anterior y el tamaño de la celda actual.<br>
+				La organización de direcciones de memoria <b>no contiguas</b> es aquella en la que las celdas de memoria se organizan en cualquier lugar de la memoria, sin ningún patrón predecible. En este tipo de organización, la dirección de memoria se asigna a cada celda de forma independiente.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;4.3 SISTEMA DE MEMORIA (COMPARTIDA)</b><br><br>
+				La memoria compartida es aquel tipo de memoria que puede ser accedida por múltiples programas, ya sea para comunicarse entre ellos o para evitar copias redundantes. La memoria compartida es un modo eficaz de pasar datos entre aplicaciones. Dependiendo del contexto, los programas pueden ejecutarse en un mismo procesador o en procesadores separados. La memoria usada entre dos hilos de ejecución dentro de un mismo programa se conoce también como memoria compartida.<br><br>
+				<b>Hardware</b><br>
+				En hardware, la memoria compartida se refiere a una configuración de hardware en la que varios componentes comparten un área de memoria común en lugar de tener su propia memoria dedicada. Esto permite a los componentes compartir información y datos de manera más eficiente, en lugar de tener que transferir datos a través de canales de comunicación más lentos.<br>
+				<b>Multiprocesadores</b><br>
+				Los multiprocesadores son sistemas dentro de una computadora que implementan el multiprocesamiento, es decir, que utilizan más de un procesador para procesar paralelamente, lo cual mejora la velocidad de ejecución del sistema.<br>
+				<b>Multiprocesadores poco acoplados</b><br>
+				En estos sistemas, cada procesador tiene su propia memoria local, canales de IO, y sistema operativo. En este caso, los procesadores intercambian datos a través de una red de alta velocidad a través de mensajes. Estos sistemas permiten sistemas de memoria distribuida, la cual es altamente escalable. Permite la programación MIMD (multiple-instruciones-on-multiple-data).<br>
+				<b>Multiprocesadores altamente acoplados</b><br>
+				Es un multiprocesador con una memoria compartida y altamente acoplada a los procesadores. Estos se clasifican en sistemas de acceso uniforme a memoria y en sistemas de acceso no-uniforme a memoria.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.3.1 REDES DE INTERCONEXIÓN DINÁMICA (INDIRECTA)</b><br><br>
+				Las redes de interconexión dinámicas son una tecnología emergente que permite la conexión y comunicación entre diferentes sistemas informáticos en tiempo real. Estas redes permiten la integración de diferentes plataformas y servicios, lo que aumenta la eficiencia y reduce los tiempos de respuesta en los procesos empresariales.<br><br>
+				<b>Red Dinámica</b><br>
+				Una red dinámica es una red cuya topología puede variar durante el cursó de la ejecución de un programa paralelo o entre dos ejecuciones de programas. La red está constituida por elementos materiales específicos, llamados Conmutadores o switches.<br>
+				<b>Red Indirecta</b><br>
+				Las redes indirectas también pueden modelarse con un grafo donde n es un conjunto de switches y c es el conjunto de enlaces unidireccionales o bidireccionales entre switches. Para el análisis de la mayoría de propiedades, no es necesario incluir explícitamente los nodos de procesamiento en el grafo. Aunque las redes indirectas pueden modelarse de forma similar a las directas existen algunas diferencias entre ellas.<br><br>
+				Las redes de interconexión dinámicas son sistemas de comunicación que permiten la transferencia de datos en tiempo real entre diferentes dispositivos y plataformas. Estas redes se caracterizan por su capacidad para adaptarse a diferentes entornos y situaciones, lo que les permite optimizar la comunicación y el intercambio de información en diferentes contextos y sectores.<br><br>
+				<b>Medio compartido</b><br>
+				Técnica utilizada para compartir recursos entre varios componentes de hardware, como procesadores y dispositivos de almacenamiento.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;4.4 SISTEMA DE MEMORIA (DISTRIBUIDA)</b><br><br>
+				<b>Muticomputadores</b><br>
+				Los sistemas multicomputadores se pueden ver como un computador paralelo en el cual cada procesador tiene su propia memoria local. En estos sistemas la memoria se encuentra distribuida y no compartida como en los sistemas multiprocesador. Los computadores se comunican a través de paso de mensajes, ya que éstos sólo tienen acceso directo a su memoria local y no a las memorias del resto de procesadores.<br>
+				La transferencia de los datos se realiza a través de la red de interconexión que conecta un subconjunto de procesadores con otro subconjunto. La transferencia de unos procesadores a otros se realiza por tanto por múltiples transferencias entre procesadores conectados dependiendo del establecimiento de dicha red.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.4.1 REDES DE INTERCONEXIÓN ESTÁTICA</b><br><br>
+				<b>Red de interconexión</b><br>
+				El papel de la red de interconexión es tanto más importante cuanto mayor sea el número de elementos físicos que se deben unir y el flujo de información que se desee intercambiar; en el caso de los ordenadores masivamente paralelos.<br>
+				<b>Red estática</b><br>
+				Una red estática es una red cuya topología queda definida de manera definitiva y estable durante la construcción de la máquina paralela. La red simplemente une los diversos elementos de acuerdo a una configuración dada. Se utiliza sobre todo en el caso de los multicomputadores para conectar los diversos procesadores que posee la máquina.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;4.5 CASOS PARA ESTUDIO</b><br><br>
+				<b>NVIDIA: </b>NVIDIA es una empresa que diseña y fabrica tarjetas gráficas, procesadores y sistemas de computación de alto rendimiento. La tecnología CUDA de NVIDIA permite la computación paralela en sus tarjetas gráficas, lo que las hace ideales para aplicaciones como la inteligencia artificial, la simulación y el procesamiento de imágenes.<br>
+				<b>Amazon Web Services: </b>AWS es un servicio de computación en la nube que ofrece una amplia variedad de opciones de computación paralela, incluyendo Amazon EC2, que permite el uso de múltiples instancias para procesamiento paralelo de grandes conjuntos de datos.<br>
+				<b>Google Cloud Plataform: </b>Google Cloud Platform es otro servicio de computación en la nube que utiliza la computación paralela para procesar grandes cantidades de datos. Google también ha desarrollado su propio procesador de inteligencia artificial llamado TPU (Tensor Processing Unit), que utiliza la computación paralela para acelerar el entrenamiento de redes neuronales.<br>
+				<b>IBM: </b>IBM ha desarrollado una variedad de productos y servicios de computación paralela, incluyendo el sistema de computación en paralelo IBM Blue Gene, que ha sido utilizado en aplicaciones científicas y de ingeniería, y el servidor de alto rendimiento IBM Power System AC922, que utiliza procesadores IBM POWER9 para ofrecer computación de alto rendimiento.<br>
+			</p>
+
+				<button type="button" class="botonU4" onclick="pagU3()"><---Regresar a página anterior</button>
+				<button type="button" class="botonU4" onclick="pagInicio()">--Volver al inicio--</button>
+				<button type="button" class="botonU4" onclick="pagPra()">Ir a la siguiente página---></button>
+
+			<script src="../JS/script.js"></script>
+		</body>
+	</html>

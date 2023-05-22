@@ -1,0 +1,132 @@
+<!-- Esta es la página dedicada a la unidad 1, en la cual
+	 se encontrará toda la información con respecto a esta
+	 unidad.
+	 Autor: Juan Carlos Hurtado Vargas -->
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Unidad 1</title>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" type="text/css" href="../CSS/style.css" media="screen"/>
+			<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@700&display=swap" rel="stylesheet">
+		</head>
+		<body class="fondoU1">
+			<h1 class="tituloU1">UNIDAD 1</h1>
+			<h2 class="subtituloU1">Arquitecturas de cómputo</h2>
+			<p class="textoU1">
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;1.1 MODELOS DE ARQUITECTURAS DE CÓMPUTO</b><br>
+				La arquitectura de una computadora es la especificación/descripción de la estructura y dinámica de este sistema computacional de manera abstracta, es decir, describe el sistema computacional de manera general.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1 ARQUITECTURAS CLÁSICAS</b><br><br>
+				<b>Arquitectura Von-Neumann</b><br>
+				Es una arquitectura de computadoras que consiste en una unidad de procesamiento (abarca a la UC, la ALU y los registros de procesador), una unidad de control (que abarca al registro de instrucciones y al contador de programas), memoria, almacenamiento, y mecanismos de entrada/salida.<br><br>
+				<b>Arquitectura Harvard</b><br>
+				Es una arquitectura de computadoras similar a la Von-Neumann pero con secciones de memoria independientes para las instrucciones y los datos de la computadora, lo cual implica buses independientes correspondientemente. La versión modificada de esta arquitectura es la que actualmente domina el mercado.<br><br>
+				<b>Arquitectura Harvard Modificada</b><br>
+				Es la arquitectura de Harvard con la diferencia de que permite el acceso a las instrucciones como si estas estuvieran en la memoria de datos.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.2 SEGMENTADAS</b><br><br>
+				Es una técnica de implementación por la cual se solapa la ejecución de múltiples instrucciones.<br>
+				Consiste en la segmentación del procesador a lo que llamamos “pipeline”, descomponiendo en etapas para poder procesar una instrucción diferente en cada una de ellas y trabajar con variables a la vez.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.3 DE MULTIPROCESAMIENTO</b><br><br>
+				El multiprocesamiento es una tecnología que permite realizar múltiples tareas simultáneamente en un sistema informático. Esto se hace mediante el uso de múltiples procesadores o núcleos de procesador que trabajan juntos para realizar tareas complejas. El multiprocesamiento se utiliza para mejorar el rendimiento y la eficiencia en la realización de tareas, así como para manejar tareas grandes y complejas, como simulaciones de modelos, procesamiento de grandes cantidades de datos y ejecución de aplicaciones con uso intensivo de gráficos.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;1.2 ANÁLISIS DE LOS COMPONENTES</b><br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.1 ARQUITECTURAS</b><br><br>
+				<b>Funciones básicas de un computador</b>
+			</p>
+			<ul class="listaDes">
+				<li>Procesamiento de datos</li>
+				<li>Almacenamiento de datos</li>
+				<li>Transferencia de datos</li>
+				<li>Control</li>
+			</ul>
+			<p class="textoU1">
+				<b>Unidad Central de Procesamiento (CPU)</b><br>A grandes rasgos, controla el funcionamiento del computador y lleva a cabo sus funciones de procesamiento de datos. Frecuentemente se le llama simplemente procesador.<br><br> 
+				<b>Unidad Aritmético-Lógica (ALU)</b><br>La ALU es la parte del computador que realiza las operaciones aritméticas y lógicas con los datos. El resto de los elementos del computador (unidad de control, registros, memoria, E/S) están principalmente para suministrar datos a la ALU.<br><br>
+				<b>Registros</b><br>Los registros son las memorias más cercanas al procesador, son de acceso rápido y disponen de poca capacidad. Almacenan datos, comandos, instrucciones, entre otros.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.2 MEMORIA</b><br><br>
+				Es un dispositivo qué puede almacenar dos tipos de valores estables en un periodo de tiempo. Un dispositivo capaz de almacenar 1 bit se le conoce cómo celda basica de memoria. Un dispositivo de memoria son un conjunto de celdas y circuitos asociados.<br>Él número de bits qué puede almacenar cada localidad se le conoce cómo ancho de la palabra. Contiene un  decodificador de direcciones.<br><br>
+				<b>RAM (Random Access Memory)</b><br>Memoria volátil la cual tiene la capacidad de leer y escribir datos de manera rápida. Siempre debe de tener una fuente de poder, sí no los datos almacenados se perderán.<br><br>
+				<b>ROM (Read Only Memory)</b><br>Contiene un patrón de datos permanentes. No se puede escribir en ella. Existen modelos de rom programables PROM cómo los EPROM y los EEPROM<br><br>
+				<b>Memoria Caché</b><br>Memoria de acceso rápido qué sirve de buffer entre él procesador y la memoria principal. Utilizada para reducir él tiempo de espera del procesador para leer los datos más usados o recientes qué se necesitan en él momento. Es una copia de la información qué se usó en cada proceso qué ha hecho él procesador<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.3 MANEJO DE ENTRADA/SALIDA</b><br><br>
+				<b>Entrada/Salida</b><br>
+				Una computadora no puede estar formada solo por un CPU y una memoria. Para  darle  alguna  utilidad  debe  de  comunicarse  con  el  mundo  exterior  a  través  del subsistema de entrada/salida (I/O input/output).<br><br>
+				<b>Funciones del sistema E/S</b><br>
+				1.DIRECCIONAMIENTO: Selección del dispositivo correspondiente de entre los dispositivos disponibles en el sistema.<br> 
+				2.SINCRONIZACIÓN: Ha de posibilitar que la CPU y la memoria (alta velocidad transferencia de datos) se puedan comunicar con los dispositivos de E/S (baja velocidad) sincronizando los envíos de datos entre ambos.<br> 
+				3.TRANSFERENCIA: El sistema E/S debe de tener toda la circuitería y señales de comunicación apropiadas para llevar a cabo la comunicación con cada uno de los dispositivos del sistema.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.3.1 MÓDULOS DE ENTRADA/SALIDA</b><br><br>
+				La E/S se implementa mediante dispositivos periféricos.<br><br>
+				DISPOSITIVO PERIFÉRICO:
+			</p>
+			<ul class="listaDes">
+				<li>Elementos que permiten la transferencia de información entre la CPU y el mundo exterior.</li> 
+				<li>Interfaz que traduce la información asíncrona y analógica del mundo exterior a la información síncrona y codificada del computador.</li> 
+				<li>Dos partes: módulo de E/S y dispositivo (externo).</li>
+			</ul>
+			<p class="textoU1">FUNCIONES:</p>
+			<ul class="listaDes">
+				<li>Reconocer la dirección de la CPU que identifica al dispositivo externo</li>
+				<li>Transferencia de datos entre el CPU y el dispositivo externo</li>
+				<li>Recepción comandos desde el CPU</li>
+				<li>Mantener información del estado del periférico y mantener el protocolo de comunicaciones con el periférico</li>
+			</ul>
+			<p class="textoU1"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.3.2 ENTRADA/SALIDA PROGRAMADA</b></p>
+			<ul class="listaDes">
+				<li>El CPU tiene el control absoluto de la operación de E/S: inicia y lleva a cabo la transferencia</li>
+				<li>La CPU está dedicándose por completo a realizar la operación de E/S: realiza tanto la comprobación de estado como la transferencia y la inicialización: poco eficiente</li>
+				<li>Hardware mínimo</li>
+			</ul>
+			<p class="textoU1">
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.3.3 ENTRADA/SALIDA MEDIANTE INTERRUPCIONES</b><br><br>
+				La E/S le indica al CPU cuando está preparada para transferir datos (genera una interrupción al CPU), activando una línea especial conectada al CPU (línea de interrupción).<br><br>
+				Funcionamiento:<br>
+				1.El procesador ejecuta instrucciones de un programa. Al finalizar cada instrucción comprueba si se ha producido una interrupción.<br>
+ 				2.En caso afirmativo se salva el estado actual del programa (contador del programa y registros) y se salta a ejecutar la rutina de servicio correspondiente.<br> 
+				3.La rutina de servicio efectúa las operaciones apropiadas en la E/S para realizar la transferencia de datos solicitada.<br>
+ 				4.Al finalizar la rutina de servicio se recupera el estado de la CPU y se continúa ejecutando el programa que se estaba ejecutando antes de la interrupción.<br><br>
+ 				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.3.4 ACCESO DIRECTO A MEMORIA</b><br><br>
+ 				El DMA (Direct Memory Access) es un procesador/controlador especializado en transferencias “muy grandes” desde periféricos a memoria y viceversa.<br> 
+				Es programable. La CPU no realiza ninguna tarea (salvo programar el DMA) ya que la inicialización y transferencia son gobernadas por el periférico.<br><br>
+				Para programar el DMA hay que enviarle al menos los siguientes datos:
+			</p>
+			<ul class="listaDes">
+				<li>Dirección/puerto periférico E/S</li>
+				<li>Posición/dirección en memoria principal</li>
+				<li>Tamaño (número de bytes a transferir)</li>
+				<li>Tipo transferencia: lectura o escritura</li>
+			</ul>
+			<p class="textoU1">
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.3.5 CANALES Y PROCESADORES DE E/S</b><br><br>
+				Siguiente evolución en los sistemas de E/S: tener un procesador capaz de interpretar secuencias de operaciones y de esa forma tener bajo su control un mayor número de operaciones y módulos de E/S, cada vez más complejas.<br> 
+				El canal de E/S es un “pequeño” procesador especializado en operaciones de E/S. Si además tiene memoria propia, entonces se lo llama procesador de E/S.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.4 BUSES</b><br><br>
+				Tipos de buses:
+			</p>
+			<ul class="listaDes">
+				<li><b>En Paralelo: </b>Es un bus en el cual los datos son enviados por bytes  al mismo tiempo, con la ayuda de varias líneas que tienen funciones fijas</li>
+				<li><b>En Serie: </b>En este  los datos son enviados de bit a bit y se reconstruyen por medio de registros o rutinas de software</li>
+			</ul>
+			<p class="textoU1">Estructura:</p>
+			<ul class="listaDes">
+				<li><b>Líneas de datos: </b>Caminos para transferir datos entre el resto de componentes de un computador</li>
+				<li><b>Líneas de direiones: </b>Designan la posición/dirección de los datos</li>
+				<li><b>Líneas de control: </b>Controlan el acceso y uso de los buses anteriores</li>
+			</ul>
+			<p class="textoU1">
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.2.5 INTERRUPCIONES</b><br><br>
+				Una interrupción (del inglés Interrupt Request, también conocida como petición de interrupción) es una señal recibida por el procesador de un ordenador, indicando que debe "interrumpir" el curso de ejecución actual y pasar a ejecutar código específico para tratar esta situación.<br>No  forma parte del programa, sino que pertenece al sistema operativo o al BIOS). Una vez finalizada dicha subrutina, se reanuda la ejecución del programa.<br><br>
+				Proceso:
+			</p>
+			<ol class="listaOrd">
+				<li>Terminar la instrucción de la máquina en curso</li>
+				<li>Salvar el valor del contador de programa,IP, en la pila para que la CPU al terminar el proceso pueda seguir ejecutando el programa a partir de la última instrucción</li>
+				<li>LA CPU  salta a la dirección donde esta almacenada la rutina de servicio y la ejecuta  esta rutina como objetivo de atender el dispositivo que generó la interrupción</li>
+				<li>Una vez que termina la interrupción el procesador restaura el proceso de la pila y regresa a donde se estaba usando anteriormente</li>
+			</ol>
+			<button type="button" class="botonU1" onclick="pagInicio()"><---Volver al inicio</button>
+			<button type="button" class="botonU1" onclick="pagU2()">Ir a la siguiente página---></button>
+
+			<script src="../JS/script.js"></script>
+		</body>
+	</html>

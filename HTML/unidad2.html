@@ -1,0 +1,110 @@
+<!-- Esta es la página dedicada a la unidad 2, en la cual
+	 se encontrará toda la información con respecto a esta
+	 unidad.
+	 Autor: Juan Carlos Hurtado Vargas -->
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Unidad 2</title>
+			<meta charset="UTF-8">
+			<link rel="stylesheet" type="text/css" href="../CSS/style.css" media="screen"/>
+			<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+		</head>
+		<body class="fondoU2">
+			<h1 class="tituloU2">UNIDAD 2</h1>
+			<h2 class="subtituloU2">Estructura y Funcionamiento de la Unidad Central de Procesamiento</h2>
+			<p class="textoU2"><b>&nbsp;&nbsp;&nbsp;&nbsp;2.1 ORGANIZACIÓN DEL PROCESADOR</b><br></p>
+			<ul class="listaDes2">
+				<li><b>Unidad de control:</b> Esta unidad se encarga de leer las instrucciones del programa y de decodificarlas para que puedan ser ejecutadas por el procesador</li>
+				<li><b>Unidad aritmético-lógica (ALU):</b> La ALU es la unidad encargada de realizar operaciones aritméticas (suma, resta, multiplicación, división) y lógicas (AND, OR, NOT) sobre los datos que se encuentran en la memoria</li>
+				<li><b>Registros:</b> Los registros son una pequeña cantidad de memoria de alta velocidad que se encuentran dentro del procesador. Sirven para almacenar temporalmente los datos y las instrucciones que se están procesando</li>
+				<li><b>Unidad de memoria caché:</b> La memoria caché es una memoria de acceso rápido que se encuentra en el procesador. Sirve para almacenar temporalmente los datos que se están utilizando con mayor frecuencia, con el objetivo de acelerar el acceso a los mismos</li>
+			</ul>
+			<p class="textoU2">
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;2.2 ESTRUCTURA DE REGISTROS</b><br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.1 REGISTROS VISIBLES PARA EL USUARIO</b><br><br>
+				Un registro es una memoria de alta velocidad y poca capacidad, integrada en el microprocesador, que permite guardar transitoriamente y acceder a valores muy usados, generalmente en operaciones matemáticas.<br>
+				Los <b>registros visibles del usuario</b> son un conjunto de registros que pueden ser accedidos directamente por los programas que se ejecutan en la CPU.<br><br>
+				Los registros visibles del usuario generalmente se encuentran en la unidad central de procesamiento (CPU) y se pueden dividir en dos categorías principales:
+			</p>
+			<ol class="listaOrd2">
+				<li><b>Registros de propósito general:</b> estos registros se utilizan para una amplia variedad de tareas y pueden ser accedidos directamente por los programas. se utilizan para almacenar datos temporales, direcciones de memoria y otros valores importantes para el procesamiento de datos</li>
+				<li><b>Registros de control:</b> estos registros se utilizan para controlar el flujo de ejecución de un programa, incluyen el contador de programa (program counter) y el registro de estado (status register)</li>
+			</ol>
+			<p class="textoU2">
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.2 REGISTROS DE CONTROL Y DE ESTADOS</b><br><br>
+				Los <b>registros de control</b> son utilizados por la unidad de control para controlar el funcionamiento de la CPU y por programas privilegiados del sistema para controlar la ejecución de programas.
+			</p>
+			<ul class="listaDes2">
+				<li>Regulan la ejecución de instrucciones</li>
+				<li>Controla que no existen desfases entre operaciones del CPU</li>
+				<li>Me permiten controlar estados</li>
+			</ul>
+			<p class="textoU2">
+				La información sobre el estado del procesador puede estar almacenada en un registro o en más de uno, aunque habitualmente suele ser un único registro denominado registro de estado.<br>Los bits del registro son modificados por el procesador como resultado de la ejecución de algunos tipos de instrucciones, por ejemplo instrucciones aritméticas o lógicas, como consecuencia de algún acontecimiento, como las peticiones de interrupción.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2.3 EJEMPLOS DE REGISTROS DE CPU REALES</b><br><br>
+				<b>MOTOROLA MC68000</b><br>
+				Registros de 32 bits: 8 de datos y 9 de direccion<br>
+				1.Los de datos también se usan como registros índice (un modo de direccionamiento), permite operaciones con 8,16 y 32 bits segun determine el código de operación.<br>
+				2.Los de direcciones A7 y A7’ punteros de pila para usuarios y para SO respectivamente.<br>
+				3.Contador de programa de 32 bits y registro de estado de 16.<br><br>
+				<b>INTEL 8086</b><br>
+				Enfoque diferente de la organizacion de los registros cada registro tiene un uso particular aunque algunos pueden tener uso general.<br>
+				4 registros de datos de 16 bits,direccionables tambien como bytes.<br>
+				Registros de segmento uso dedicado e implicito,apuntan a los segmentos de datos,codigo y pila(base + desplazamiento).<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;2.3 EL CICLO DE INSTRUCCIÓN</b><br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.1 CICLO FETCH-DECODE-EXECUTE</b><br><br>
+				El encargado de ejecutar un programa en una computadora es el CPU, y lo hace mediante el ciclo Fetch-Decode-Execute, y con él se realizan todas las tareas posibles.<br><br>
+				Este ciclo está conformado por las siguientes etapas:
+			</p>
+			<ol class="listaOrd2">
+				<li><b>Traer la instrucción (Fetch):</b> Se obtiene la instrucción desde la memoria y se almacena en el registro de la CPU para nuevas indicaciones</li>
+				<li><b>Decodificar la instrucción (Decode):</b> Se identifica el modo de direccionamiento de la instrucción y ubicación de datos a tratar</li>
+				<li><b>Carga de parámetros:</b> Se carga la lectura, cargando todos los datos identificados en el paso anterior</li>
+				<li><b>Ejecutar (Execute):</b> Se ejecuta la instrucción ya configurada, realiza la tarea indicada</li>
+				<li><b>Almacenar:</b> Se almacena el resultado obtenido de la instrucción</li>
+				<li><b>Actualizar PC:</b> Se actualiza el registro PC (Program Counter) que contiene la siguiente dirección a ejecutar</li>
+			</ol>
+			<p class="textoU2">
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.2 SEGMENTACIÓN DE INSTRUCCIONES</b><br><br>
+				Es una forma efectiva para organiza el hw de la CPU para realizar más de una operación al mismo tiempo. Consiste en descomponer el proceso de ejecución de las instrucciones en fases o etapas que permitan una ejecución simultánea. Explota el paralelismo entre las instrucciones de un flujo secuencial.<br><br>
+				<b>TUBERÍAS</b><br>
+				Son un conjunto de subprocesos/hilos conectados secuencialmente en el cual la salida de un elemento (un subproceso) es la entrada del otro, con el cual los subprocesos se suelen ejecutar paralelamente o concurrentemente.<br><br>
+				<b>SEGMENTACIÓN DE INSTRUCCIONES(TUBERÍAS)</b><br>
+				Usando tuberías de instrucciones, una instrucción en específico se puede segmentar, es decir, dividir de manera que el CPU pueda procesar la instrucción en partes. Es común que en la segmentación de instrucciones (por medio de tuberías de instrucciones), una instrucción se divida según los pasos del ciclo fetch-decode-execute. Después de cada etapa de la instrucción, se escribe información en los registros de la tubería, los cuales almacenan el output necesario para reanudar con la siguiente etapa.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.3 CONJUNTO DE INSTRUCCIONES: CARACTERÍSTICAS Y FUNCIONES</b>
+			</p>
+			<ul class="listaDes2">
+				<li><b>Ortogonales(Simétricas):</b> En primera instancia se dice que las instrucciones en un set deben de poder ser fuente y destino de cualquier elemento de la arquitectura del CPU con esto se refiere a que las instrucciones no solo deben de ser independientes en el sentido de que cada una haga una función única y distinta que no repita lo que hace otra, sino que en conjunto el set de instrucciones debe de ser independiente y consistente</li>
+				<li><b>Cisc:</b> Un juego de instrucciones Cisc se caracteriza por un número reducido de instrucciones además del uso de pipelining que permite al procesador dividir la ejecución de una instrucción en distintas fases incrementando de esa manera la velocidad de ejecución</li>
+				<li><b>Risc:</b> Este set tiene una cantidad de instrucciones considerable pero dichas instrucciones no suelen ejecutarse por medio de segmentación o pipelining, sus instrucciones no son ortogonales eso quiere decir que se debe tener cuidado con los registros que se utilizan debido a que no se pueden direccionar de cualquier forma los datos sobre cualquier registro, se debe especificar en la instrucción</li>
+			</ul>
+			<p class="textoU2">
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.3.4 MODOS DE DIRECCIONAMIENTO</b><br><br>
+				El direccionamiento en computación se refiere a la forma en que se especifica una dirección de memoria o un registro dentro de una CPU.<br><br>
+				<b>DIRECCIONAMIENTO INMEDIATO</b><br>
+				Es un modo de direccionamiento en informática en el que el valor del operando se incluye directamente en la instrucción. En otras palabras, el operando se proporciona como un valor inmediato en lugar de una dirección de memoria o registro.<br><br>
+				<b>DIRECCIONAMIENTO DIRECTO</b><br>
+				Es un modo de direccionamiento en informática en el que la dirección de memoria del operando se especifica directamente en la instrucción. En otras palabras, el operando se encuentra en una dirección de memoria fija y conocida.<br><br>
+				<b>DIRECCIONAMIENTO INDIRECTO</b><br>
+				Es un modo de direccionamiento en informática en el que la dirección de memoria del operando se encuentra en otro registro o en otra dirección de memoria. En otras palabras, el operando se encuentra en una ubicación de memoria que se especifica indirectamente a través de otra ubicación de memoria.<br><br>
+				<b>DIRECCIONAMIENTO RELATIVO</b><br>
+				Es un modo de direccionamiento en informática en el que la dirección de memoria del operando se especifica como una distancia o desplazamiento desde la dirección actual de la instrucción. En otras palabras, el operando se encuentra en una posición de memoria relativa a la dirección actual de la instrucción.<br><br>
+				<b>DIRECCIONAMIENTO INDEXADO</b><br>
+				Es un modo de direccionamiento en informática en el que la dirección de memoria del operando se calcula sumando una dirección base y un índice o desplazamiento. En otras palabras, el operando se encuentra en una posición de memoria que se calcula mediante una suma de una dirección base y un índice o desplazamiento.<br><br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;2.4 CASOS DE ESTUDIO DE CPU REALES</b><br><br>
+				<b>INTEL</b><br>
+				Intel Corporation es una empresa estadounidense fundada en 1968 por Robert Noyce y Gordon Moore. La compañía se especializa en la fabricación de microprocesadores, chips y otros componentes electrónicos para ordenadores y dispositivos móviles.<br>
+				En sus primeros años, Intel se centró en la fabricación de memorias RAM y ROM, pero su verdadero éxito llegó en 1971 cuando desarrolló el primer microprocesador comercialmente viable, el Intel 4004. Este procesador revolucionó la industria de la computación al permitir la creación de ordenadores personales más pequeños, más baratos y más eficientes.<br><br>
+				<b>AMD</b><br>
+				Advanced Micro Devices, Inc. (AMD) es una compañía estadounidense de semiconductores con sede en Santa Clara, California, que desarrolla procesadores de computación y productos tecnológicos similares de consumo. Sus productos principales incluyen microprocesadores, chipsets para placas base, circuitos integrados auxiliares, procesadores embebidos y procesadores gráficos para servidores, estaciones de trabajo, computadores personales y aplicaciones para sistemas embebidos.
+			</p>
+
+				<button type="button" class="botonU2" onclick="pagU1()"><---Regresar a página anterior</button>
+				<button type="button" class="botonU2" onclick="pagInicio()">--Volver al inicio--</button>
+				<button type="button" class="botonU2" onclick="pagU3()">Ir a la siguiente página---></button>
+
+			<script src="../JS/script.js"></script>
+		</body>
+	</html>

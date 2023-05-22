@@ -1,0 +1,435 @@
+/* En este archivo lo que se hará es incluir el código pertinente
+   para el formato y estilo de nustros htmls.
+   Autor: Juan Carlos Hurtado Vargas */
+
+/*****************************/
+/* Bloque de la pg de inicio */
+/*****************************/
+body.inicio{
+   background-image:url("../MEDIA/fondoInicio.gif");
+   background-size:cover;
+   background-attachment:fixed;
+   background-repeat:no-repeat;
+   text-align:center;
+}
+h1.tituloIn{
+   font-family: 'Roboto', sans-serif;
+   font-size:75px;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+p.textoIn{
+   font-family: 'Wix Madefor Display', sans-serif;
+   font-size:40px;
+   color:black;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+.botonIn{
+    cursor:pointer;
+    text-decoration: none;
+    display:inline-block;
+    width:15%;
+    padding:20px;
+    border: 3px solid black;
+    border-radius:50px;
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    transition: all 0.9s;
+    text-align: center;
+    font-size: 20px;
+    
+  }
+  .botonIn:hover{
+    background:black;
+    color:white;
+  }
+/*****************************/
+/* Bloque de la pg de la U1  */
+/*****************************/
+body.fondoU1{
+   background-image:url("../MEDIA/fondoU1.jpg");
+   background-size:cover;
+   background-attachment:fixed;
+   background-repeat:no-repeat;
+}
+h1.tituloU1{
+   font-family: 'Kanit', sans-serif;
+   font-size:60px;
+   text-align:center;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+h2.subtituloU1{
+   font-family: 'Kanit', sans-serif;
+   font-size:40px;
+   text-align:center;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+p.textoU1{
+   font-family: 'Titillium Web', sans-serif;
+   font-size:25px;
+   color:black;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+ul.listaDes{
+   font-family: 'Titillium Web', sans-serif;
+   font-size:25px;
+   color:black;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+ol.listaOrd{
+   font-family: 'Titillium Web', sans-serif;
+   font-size:25px;
+   color:black;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+.botonU1{        
+   cursor:pointer;
+   text-decoration: none;
+   border: 3px solid white;
+   border-radius:50px;
+   display:inline-block;
+   width:25%;
+   padding:20px;
+   text-align: center;
+   font-weight: bold;
+   color:white;
+   background: darkblue;
+   transition: all 0.5s ease;
+   font-size: 20px;
+   box-shadow: #ccc;
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+  .botonU1:hover{
+     color:darkblue;
+     background: white;
+     border: 3px solid darkblue;
+     box-shadow:NONE;
+  }
+/*****************************/
+/* Bloque de la pg de la U2  */
+/*****************************/
+body.fondoU2{
+   background-image:url("../MEDIA/fondoU2.webp");
+   background-size:cover;
+   background-attachment:fixed;
+   background-repeat:no-repeat;
+}
+h1.tituloU2{
+   font-family: 'Kanit', sans-serif;
+   font-size:60px;
+   text-align:center;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+h2.subtituloU2{
+   font-family: 'Kanit', sans-serif;
+   font-size:40px;
+   text-align:center;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+p.textoU2{
+   font-family: 'Anton', sans-serif;
+   font-size:25px;
+   color:black;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+ul.listaDes2{
+   font-family: 'Anton', sans-serif;
+   font-size:25px;
+   color:black;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+ol.listaOrd2{
+   font-family: 'Anton', sans-serif;
+   font-size:25px;
+   color:black;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+.botonU2{        
+   cursor:pointer;
+   text-decoration: none;
+   border-radius:50px;
+   display:inline-block;
+   width:25%;
+   padding:20px;
+   text-align: center;
+   font-weight: bold;
+   color:yellow;
+   background: darkblue;
+   border: 3px solid yellow;
+   transition: all 0.5s ease;
+   font-size: 20px;
+   box-shadow: #ccc;
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+  .botonU2:hover{
+     color:darkblue;
+     background: yellow;
+     border: 3px solid darkblue;
+     box-shadow:NONE;
+  }
+/*****************************/
+/* Bloque de la pg de la U3  */
+/*****************************/
+body.fondoU3{
+   background-image:url("../MEDIA/fondoU3.jpg");
+   background-size:cover;
+   background-attachment:fixed;
+   background-repeat:no-repeat;
+}
+h1.tituloU3{
+   font-family: 'Kanit', sans-serif;
+   font-size:60px;
+   text-align:center;
+   color:black;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+h2.subtituloU3{
+   font-family: 'Kanit', sans-serif;
+   font-size:40px;
+   text-align:center;
+   color:black;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+}
+p.textoU3{
+   font-family: 'Wix Madefor Display', sans-serif;
+   font-size:25px;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+ul.listaDes3{
+   font-family: 'Wix Madefor Display', sans-serif;
+   font-size:25px;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+ol.listaOrd3{
+   font-family: 'Wix Madefor Display', sans-serif;
+   font-size:25px;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+.botonU3{        
+   cursor:pointer;
+   text-decoration: none;
+   border-radius:50px;
+   display:inline-block;
+   width:25%;
+   padding:20px;
+   text-align: center;
+   font-weight: bold;
+   color:white;
+   background: black;
+   border: 3px solid white;
+   transition: all 0.5s ease;
+   font-size: 20px;
+   box-shadow: #ccc;
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+  .botonU3:hover{
+     color:black;
+     background: grey;
+     border: 3px solid black;
+     box-shadow:NONE;
+  }
+/*****************************/
+/* Bloque de la pg de la U3  */
+/*****************************/
+body.fondoU4{
+   background-image:url("../MEDIA/fondoU4.jpg");
+   background-size:cover;
+   background-attachment:fixed;
+   background-repeat:no-repeat;
+}
+h1.tituloU4{
+   font-family: 'Kanit', sans-serif;
+   font-size:60px;
+   text-align:center;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+h2.subtituloU4{
+   font-family: 'Kanit', sans-serif;
+   font-size:40px;
+   text-align:center;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+p.textoU4{
+   font-family: 'Wix Madefor Display', sans-serif;
+   font-size:25px;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+ul.listaDes4{
+   font-family: 'Wix Madefor Display', sans-serif;
+   font-size:25px;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+.botonU4{        
+   cursor:pointer;
+   text-decoration: none;
+   border-radius:50px;
+   display:inline-block;
+   width:25%;
+   padding:20px;
+   text-align: center;
+   font-weight: bold;
+   color:orange;
+   text-shadow:  1px  0px 0px white,
+                 0px  1px 0px white,
+                -1px  0px 0px white,
+                 0px -1px 0px white;
+   background: skyblue;
+   border: 3px solid orange;
+   transition: all 0.5s ease;
+   font-size: 20px;
+   box-shadow: #ccc;
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+  .botonU4:hover{
+     color:skyblue;
+     text-shadow:  1px  0px 0px white,
+                   0px  1px 0px white,
+                  -1px  0px 0px white,
+                   0px -1px 0px white;
+     background: orange;
+     border: 3px solid skyblue;
+     box-shadow:NONE;
+  }
+/********************************/
+/* Bloque de la pg de practicas */
+/********************************/
+body.fondoPrac{
+   background-image:url("../MEDIA/fondoPrac.gif");
+   background-size:cover;
+   background-attachment:fixed;
+   background-repeat:no-repeat;
+   text-align:center;
+}
+h1.tituloPra{
+   font-family: 'Kanit', sans-serif;
+   font-size:50px;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+p.practicas{
+   font-family: 'Kanit', sans-serif;
+   font-size:30px;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+a.enlaces{
+   font-family: 'Wix Madefor Display', sans-serif;
+   font-size:20px;
+   color:white;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+}
+.botonPra{        
+   cursor:pointer;
+   text-decoration: none;
+   border-radius:50px;
+   display:inline-block;
+   width:25%;
+   padding:20px;
+   text-align: center;
+   font-weight: bold;
+   color:skyblue;
+   text-shadow:  1px  0px 0px black,
+                 0px  1px 0px black,
+                -1px  0px 0px black,
+                 0px -1px 0px black;
+   background: purple;
+   border: 3px solid skyblue;
+   transition: all 0.5s ease;
+   font-size: 20px;
+   box-shadow: #ccc;
+   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.8);
+}
+  .botonPra:hover{
+     color:purple;
+     text-shadow:  1px  0px 0px white,
+                   0px  1px 0px white,
+                  -1px  0px 0px white,
+                   0px -1px 0px white;
+     background: skyblue;
+     border: 3px solid purple;
+     box-shadow:NONE;
+  }
